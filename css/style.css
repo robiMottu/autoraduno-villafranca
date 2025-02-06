@@ -118,7 +118,7 @@ a:hover, a:focus, a:active, a:visited {
 	background-image: url('../img//private/sfondoMac.jpg');
     background-size: cover;
     background-position: 50% 80%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 	min-height: 600px;
 	padding: 5em;
 	color: #fff;
@@ -321,7 +321,7 @@ ul.footer-menu li a:hover {
         background-image: url('../img//private/sfondoiPhone.jpg');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         min-height: 600px;
         padding: 1em;
         color: #fff;
