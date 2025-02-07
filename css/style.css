@@ -314,13 +314,8 @@ ul.footer-menu li a:hover {
 ======================================== */
 
 /* Mobile */
-@media (max-width: 576px) {
-    #iFrameMaps {
-        height: 325px;
-    }
 
-    /*---------------*/
-
+@media (max-width: 767px) {
     .hero-header {
         /*background: #016cc7;*/
         background-image: url('../img//private/sfondoiPhone.jpg');
@@ -381,71 +376,15 @@ ul.footer-menu li a:hover {
         opacity: 1;
     }
 }
+
+@media (max-width: 576px) {
+    #iFrameMaps {
+        height: 325px;
+    }
+}
 @media (min-width: 577px) and (max-width: 767px) {
     #iFrameMaps {
         height: 375px;
-    }
-
-    /*---------------*/
-
-    .hero-header {
-        /*background: #016cc7;*/
-        background-image: url('../img//private/sfondoiPhone.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        min-height: 600px;
-        padding: 1em;
-        color: #fff;
-        transition: background-image 1s linear; /* Aggiungi una transizione per l'opacità */
-    }
-    .hero-header.dimmed {
-        background-image: url('../img//private/sfondoiPhone_blur.jpg');
-    }
-
-    .speaker .feature {
-        width: 100%
-    }
-    .footer-credit {
-        text-align: center;
-        padding: 40px 20px;
-    }
-    ul.footer-menu {
-        text-align: center;
-        margin-top: 30px;
-    }
-    .side-menu {
-        display: none;
-    }
-    .btn.btn-lg.btn-red.page-scroll {
-        margin-top: 1em;
-    }
-    .hero-header .logo {
-        max-width: 150px;
-    }
-
-    h1{
-        /*font-family: 'Merryweather', serif;*/
-        font-size: 4em;
-        font-weight: bolder;
-    }
-    h2{
-        font-weight: 500;
-    }
-    .hero-header h3 {
-        font-weight: normal;
-        
-        letter-spacing: 1px;
-        margin: 2em 0;
-    }
-
-    #main-content {
-        opacity: 0;
-        transition: opacity 1s linear;
-    }
-
-    #main-content.visible-content {
-        opacity: 1;
     }
 }
 
