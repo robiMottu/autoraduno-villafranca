@@ -4,6 +4,9 @@ body {
     color: #404142;
     font-size: 16px;
 	letter-spacing: 0.8px;
+
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
 }
 h1{
     font-size: 5em;
