@@ -18,17 +18,9 @@ $(document).ready(function() {
             $('.hero-header').removeClass('dimmed');
         }
     }
-
-    function updateBackgroundPosition() {
-        if ($(window).width() <= 767) {
-            var scrollTop = $(window).scrollTop();
-            $('.hero-header').css('background-position', '50% ' + (scrollTop * 0.5) + 'px');
-        }
-    }
     
     updateImage(); // Chiamata iniziale
-    updateBackgroundPosition();
-    $(window).scroll(updateBackgroundPosition);
-    $(window).resize(updateImage); // Chiamata al ridimensionamento
+    //$(window).resize(updateImage); // Chiamata al ridimensionamento
+    $(window).on('resize', updateImage)
     console.log('script.js loaded');
 });
