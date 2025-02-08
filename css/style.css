@@ -115,10 +115,10 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .hero-header {
-	background-image: url('../img//private/sfondoMac.jpg');
+	/*background-image: url('../img//private/sfondoMac.jpg');
     background-size: cover;
     background-position: 50% 80%;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 	min-height: 600px;
 	padding: 5em;
 	color: #fff;
@@ -230,7 +230,7 @@ a span.ti-twitter-alt {
 
 .footer {
     background-color: #2a2a2a;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     color: #fff;
 }
 .footer p {
@@ -309,6 +309,22 @@ ul.footer-menu li a:hover {
     color: black;
 }
 
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/private/sfondoMac.jpg'); /* Cambia con il tuo file */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Mette lo sfondo dietro tutto il contenuto */
+}
+.white-bg
+{
+    background-color: white;
+}
+
 /* ========================================
     Custom Media Queries
 ======================================== */
@@ -317,17 +333,30 @@ ul.footer-menu li a:hover {
 
 @media (max-width: 767px) {
     .hero-header {
-        /*background: #016cc7;*/
+        /*background: #016cc7;
         background-image: url('../img//private/sfondoiPhone.jpg');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: fixed;*/
         min-height: 600px;
         padding: 1em;
         color: #fff;
-        transition: background-image 1s linear; /* Aggiungi una transizione per l'opacità */
+        transition: background-image 1s linear;
     }
-    .hero-header.dimmed {
+
+    .fixed-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../img//private/sfondoiPhone.jpg'); /* Cambia con il tuo file */
+        background-size: cover;
+        background-position: center;
+        z-index: -1; /* Mette lo sfondo dietro tutto il contenuto */
+    }
+
+    .fixed-bg.dimmed {
         background-image: url('../img//private/sfondoiPhone_blur.jpg');
     }
 
@@ -404,6 +433,9 @@ ul.footer-menu li a:hover {
     ul.footer-menu {
         margin-top: 0;
     }
+    .side-menu {
+        display: none;
+    }
 }
 
 
@@ -413,5 +445,8 @@ ul.footer-menu li a:hover {
     .speaker .feature {
         width: 49%;
         margin-right: 9px;
+    }
+    .side-menu {
+        display: none;
     }
 }

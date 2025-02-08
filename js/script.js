@@ -5,17 +5,17 @@ $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 3) { // Cambia il valore 100 in base a quanto vuoi che l'utente scrolli
                     $('#main-content').addClass('visible-content');
-                    $(".hero-header").addClass('dimmed');
+                    $(".fixed-bg").addClass('dimmed');
                 }
                 else{
                     $('#main-content').removeClass('visible-content');
-                    $('.hero-header').removeClass('dimmed');
+                    $('.fixed-bg').removeClass('dimmed');
                 }
             });
         } else {
             $('.personal-responsive-img').attr('src', 'img/222logo-white.png');
             $('#main-content').addClass('visible-content');
-            $('.hero-header').removeClass('dimmed');
+            $('.fixed-bg').removeClass('dimmed');
         }
     }
     
