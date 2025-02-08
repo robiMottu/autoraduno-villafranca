@@ -319,6 +319,8 @@ ul.footer-menu li a:hover {
     background-size: cover;
     background-position: center;
     z-index: -1; /* Mette lo sfondo dietro tutto il contenuto */
+    transform: translateZ(0);
+    will-change: transform;
 }
 .white-bg
 {
@@ -354,6 +356,8 @@ ul.footer-menu li a:hover {
         background-size: cover;
         background-position: center;
         z-index: -1; /* Mette lo sfondo dietro tutto il contenuto */
+        transform: translateZ(0);
+        will-change: transform;
     }
 
     .fixed-bg.dimmed {
