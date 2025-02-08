@@ -326,6 +326,22 @@ ul.footer-menu li a:hover {
 {
     background-color: white;
 }
+#about{
+    border-bottom: 2px solid #efefef;
+}
+#prize{
+    border-bottom: 2px solid #efefef;
+}
+.alert-primary {
+    color: #cfe2ff;
+    background-color:#2033a0;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    /*box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Effetto ombra */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
 
 /* ========================================
     Custom Media Queries
