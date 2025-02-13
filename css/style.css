@@ -482,7 +482,7 @@ a span.ti-twitter-alt {
   }
 
   .highline {
-    background-color: #fdfd96; /* Giallo pastello tenue */
+    /*background-color: #fdfd96; /* Giallo pastello tenue */
     color: #dd5138;
     text-decoration: none;
     display: inline-block; /* Assicura che il padding sia visibile */
