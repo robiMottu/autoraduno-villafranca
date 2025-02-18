@@ -38,8 +38,49 @@ $(document).ready(function() {
         let elem = `<div class="slide"><img height="200px" width="250px" src="${imgPath}${imgList[i]}${ext}" alt="${imgList[i]}" /></div>`;
         $(slider).append(elem);
     }
+  
+      const swiper = new Swiper('.swiper', {
+        loop: false,
+        effect: 'cards',
+        perSlideOffset: 20,
+        perSlideRotate: 2,
+        rotate: true,
+        slideShadows: true
+      });
 
     updateImage(); // Chiamata iniziale
     $(window).resize(updateImage); // Chiamata al ridimensionamento
-    console.log('script.js loaded');
+    //console.log('script.js loaded');
+
+
+    /* debug
+    function checkBreakpoint() {
+        let width = $(window).width();
+        let breakpoint = '';
+
+        if (width < 576) {
+            breakpoint = 'XS (<576px)';
+        } else if (width >= 576 && width < 768) {
+            breakpoint = 'SM (≥576px)';
+        } else if (width >= 768 && width < 992) {
+            breakpoint = 'MD (≥768px)';
+        } else if (width >= 992 && width < 1200) {
+            breakpoint = 'LG (≥992px)';
+        } else if (width >= 1200 && width < 1400) {
+            breakpoint = 'XL (≥1200px)';
+        } else {
+            breakpoint = 'XXL (≥1400px)';
+        }
+
+        console.clear(); // Pulisce la console per evitare spam
+        console.log(`Breakpoint attuale: ${breakpoint}`);
+    }
+
+    // Controllo iniziale
+    checkBreakpoint();
+
+    // Rileva il resize dello schermo
+    $(window).resize(function() {
+        checkBreakpoint();
+    });*/
 });

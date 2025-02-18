@@ -411,6 +411,11 @@ a span.ti-twitter-alt {
 {
     background-color: white;
 }
+#schedule
+{
+    border-top: 2px solid #efefef;
+    margin-top: 30px;
+}
 #about{
     border-bottom: 2px solid #efefef;
 }
@@ -489,6 +494,14 @@ a span.ti-twitter-alt {
     color: #dd5138;
     text-decoration: none;
     display: inline-block; /* Assicura che il padding sia visibile */
+  }
+
+  .swiper {
+    width: 320px;
+    height: 400px;
+  }
+  .standTitle{
+    margin-bottom: 30px !important;
   }
   
 /* ===================================== */
@@ -577,12 +590,20 @@ a span.ti-twitter-alt {
     .carousel-button {
         visibility: hidden;
       }
+    #ae-automotive p{
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
 /*xs*/
 @media (max-width: 576px) {
     #iFrameMaps {
         height: 325px;
+    }
+    .swiper{
+        width: 240px;
+        height: 300px;
     }
     .slider{
         width: 300px;
@@ -612,6 +633,10 @@ a span.ti-twitter-alt {
 @media (min-width: 577px) and (max-width: 767px) {
     #iFrameMaps {
         height: 375px;
+    }
+    .swiper{
+        width: 280px;
+        height: 350px;
     }
     .slider{
         width: 450px;
@@ -663,6 +688,10 @@ a span.ti-twitter-alt {
     #gmail{
         margin-bottom: 40px !important;
     }
+    .swiper{
+        width: 280px;
+        height: 350px;
+    }
 }
 
 
@@ -678,5 +707,13 @@ a span.ti-twitter-alt {
     }
     .slider{
         width: 850px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .swiper{
+        width: 200px;
+        height: 250px;
     }
 }

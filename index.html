@@ -11,11 +11,14 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/themify-icons.css" rel="stylesheet">
   <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/modules/effect-cards/effect-cards.min.css">
 
+  <link href="css/style.css" rel="stylesheet">
+  
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,7 +95,7 @@
             <a href="https://chat.whatsapp.com/KpvnC04dWNWFEtLHMPcziz" class="btn btn-lg btn-red page-scroll" style="background-color: #00f04c;"><i class="icon fa-brands fa-whatsapp"></i> GRUPPO WHATSAPP <span class="ti-arrow-right"></span></a>
             <a href="#schedule" class="btn btn-lg btn-red page-scroll">PROGRAMMA <span class="ti-arrow-right"></span></a>
             <a href="https://drive.google.com/uc?export=download&id=1BX2lBumfpW29hvzdW_66mlaQYvjmqvaG" class="btn btn-lg btn-red page-scroll">REGOLAMENTO <span class="ti-arrow-right"></span></a>
-            <a href="#footer-contact" class="btn btn-lg btn-red page-scroll">CONTATTI <span class="ti-arrow-right"></span></a>
+            <a href="#footer-contact" class="btn btn-lg btn-red page-scroll">ISCRIZIONI <span class="ti-arrow-right"></span></a>
 
           </div>
         </div>
@@ -122,6 +125,38 @@
           </div>
         </div>
         <!-- End: Desc -->
+
+        <!-- Start AEAutomotive-->
+        <div class="container-fluid">
+          <div class="row me-row" id="ae-automotive">
+            <h2 class="row-title content-ct standTitle">Area Espositiva</h2>
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/m1_front.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/m1_rear.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/m1_wash.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/yarisGr.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/3series.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/audiTT.webp'); background-size: 100% 100%; background-position: center;"></div>
+                  <div class="swiper-slide" style="background-image: url('img/ae_automotive/golf.jpg'); background-size: 100% 100%; background-position: center;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+              <p>
+                Siamo entusiasti di annunciare la nostra collaborazione con <u class="highline">AE Automotive</u>, un'azienda leader nella creazione di assetti ad alte prestazioni per automobili! 
+                Durante l'evento, AE Automotive avrà un stand <u class="highline">espositivo esclusivo</u>, dove potrete vedere da vicino la qualità e l'innovazione che li contraddistinguono. 
+                Ma non finisce qui! 
+                Uno dei due fondatori, oltre a essere un esperto del settore, è anche un <u class="highline">fotografo professionista</u> 
+                e si occuperà di catturare i momenti più spettacolari del raduno, trasformandoli in immagini mozzafiato!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End AEAutomotive-->
 
         <!-- Start: Schedule -->
         <div class="container">
@@ -155,7 +190,7 @@
                         <div class="media-body">
                           <h4 class="media-heading">Dalle 12.30 alle 14.30</h4>
                           <h5>PRANZO</h5>
-                          <p>Possibilità di consumare il pranzo presso il 'Bar del Palazzetto' con la formula 'Panino + Patatine + Bibita'</p>
+                          <p>Possibilità di consumare il pranzo presso il 'Bar del Palazzetto' con la formula 'Hamburger + Patatine + Bibita'</p>
                         </div>
                       </div>
                     </div>
@@ -224,7 +259,7 @@
             <hr style="border-color: black;"/>
           </div>
           <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-            <p style="padding-bottom: 0; margin-bottom: 0;">Il pranzo prevede la formula "Panino + Patatine + Bibita".</p>
+            <p style="padding-bottom: 0; margin-bottom: 0;">Il pranzo prevede la formula "Hamburger + Patatine + Bibita".</p>
             <p style="padding: 0; margin: 0;"><b>Le prenotazioni per il pranzo si chiuderanno il 21/03. <u style="color: #dd5138;">Per chi arriverà senza prenotazione si garantirà il servizio fino ad esaurimento scorte.</u></b></p>
           </div>
         </div>
@@ -343,6 +378,7 @@
       <script src="js/jquery.easing.min.js"></script>
       <script src="js/scrolling-nav.js"></script>
       <script src="js/validator.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="js/script.js"></script>
 
     </body>
