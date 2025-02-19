@@ -24,10 +24,10 @@ $(document).ready(function() {
     let slider = $(".slide-track");
     let imgPath = "img/loghi_sponsor_new/";
     let ext = ".jpg";
-    let imgList = ["aeffe", "agraria", "alimenta", "barPalazzetto", "barRoma", "beilis", 
-        "bertea", "bonansone", "bottano", "busso", "duvinaFormaggi", "effepiu", "evoedile", 
+    let imgList = ["ae", "aeffe", "agraria", "alimenta", "barPalazzetto", "barRoma", "beilis", 
+        "bertea", "bonansone", "bottano", "busso", "donatella_gallo", "duvinaFormaggi", "effepiu", "evoedile", 
         "fulvioCaseificio", "gallo", "ilPruche", "kromo", "laLea", "muli", "neroDelRe", "officina626", 
-        "officinaPiccato", "panetteriaRolle", "ricotto", "rovetto", "saiel", "salfer", "scalerandi", 
+        "officinaPiccato", "panetteriaRolle", "ricotto", "roda", "rovetto", "saiel", "salfer", "scalerandi", 
         "vedCostruzioniEdili", "vera", "villafrancaFiocchi"];
     
     for (let i = 0; i < imgList.length; i++) {

@@ -443,7 +443,7 @@ a span.ti-twitter-alt {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 31));
+      transform: translateX(calc(-250px * 34)); /*numero di foto sponsor*/
     }
   }
   .slider {
@@ -474,9 +474,9 @@ a span.ti-twitter-alt {
     top: 0;
   }
   .slider .slide-track {
-    animation: scroll 120s linear infinite;
+    animation: scroll 124s linear infinite;
     display: flex;
-    width: calc(250px * 62);
+    width: calc(250px * 68); /* il doppio delle immagini nel carosello */
   }
   .slider .slide {
     height: 200px;
