@@ -531,7 +531,7 @@ a span.ti-twitter-alt {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-image: url('../img//private/sfondoiPhone.jpg'); /* Cambia con il tuo file */
+        background-image: url('../img//private/sfondoiPhone_blur.jpg'); /* Cambia con il tuo file */
         background-size: cover;
         background-position: center;
         z-index: -1; /* Mette lo sfondo dietro tutto il contenuto */
@@ -602,8 +602,11 @@ a span.ti-twitter-alt {
         height: 325px;
     }
     .swiper{
-        width: 240px;
+        /*width: 240px;
         height: 300px;
+        */
+        width: 200px;
+        height: 250px;
     }
     .slider{
         width: 300px;
