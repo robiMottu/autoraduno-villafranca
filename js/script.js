@@ -52,6 +52,47 @@ $(document).ready(function() {
     $(window).resize(updateImage); // Chiamata al ridimensionamento
     //console.log('script.js loaded');
 
+    /* Toast con informazioni importanti */
+
+    Swal.fire({
+        title: "<h3>Hey stiamo per cominciare...🏎️💨</h3>",
+        //text: "Accetti l'uso dei cookie per una migliore esperienza?",
+        html: "<h4>Assicurati un posto al nostro evento, prenota ora e stai tranquillo😉. Puoi anche presentarti il giorno stesso, ma se ci fai sapere in anticipo la tua presenza ci aiuti ad organizzarci meglio!</h4>",
+        icon: "info",
+        toast: false,
+        position: "bottom",
+        width: "100vw",
+        showConfirmButton: true,
+        showDenyButton: true,
+        focusConfirm: false,
+        didOpen: () => {
+            // Rimuove il focus dal bottone di conferma (che potrebbe essere quello di 'success')
+            const confirmButton = Swal.getConfirmButton();
+            confirmButton.blur();  // Rimuove il focus dal bottone di conferma
+          },
+        confirmButtonText: "Vado a prenotare",
+        denyButtonText: "Voglio solo guardare il sito",
+        customClass: {
+            confirmButton: "btn page-scroll btn-green",
+            denyButton: "btn btn-red page-scroll"
+        },
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        backdrop: false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          console.log("Cookie accettati");
+          $('html, body').animate({
+            scrollTop: $("#footer-contact").offset().top
+          }, 1000);
+        } else if (result.isDenied) {
+          console.log("Cookie rifiutati");
+          //localStorage.setItem("cookieAccepted", "false");
+        }
+      });
+
+    /*=============================================
+
 
     /* debug
     function checkBreakpoint() {

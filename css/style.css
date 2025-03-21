@@ -503,6 +503,15 @@ a span.ti-twitter-alt {
   .standTitle{
     margin-bottom: 30px !important;
   }
+
+  .btn-green{
+    background-color: #00a651;
+    color: white;
+  }
+
+  .swal2-icon{
+    font-size: 1.65em;
+  }
   
 /* ===================================== */
 
