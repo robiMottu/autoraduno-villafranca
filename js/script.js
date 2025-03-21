@@ -57,7 +57,11 @@ $(document).ready(function() {
     Swal.fire({
         title: "<h3>Hey stiamo per cominciare...🏎️💨</h3>",
         //text: "Accetti l'uso dei cookie per una migliore esperienza?",
-        html: "<h4>Assicurati un posto al nostro evento, prenota ora e stai tranquillo😉. Puoi anche presentarti il giorno stesso, ma se ci fai sapere in anticipo la tua presenza ci aiuti ad organizzarci meglio!</h4>",
+        html: "<h4>Assicurati un posto al nostro evento, prenota ora e stai tranquillo😉."+
+                " Non lasciarti sfuggire la possibilità di avere foto della tua macchina scattate ed editate " + 
+                "da un fotografo professionista. Non importa che genere o marca di auto tu possieda: sono tutte benvenute. " + 
+                "Abbiamo già supercar (Ferrari 488, Ferrari 296GTB, Audi R8, ecc...), giapponesi (Honda, Subaru), ferri direttamente dagli anni '90 " + 
+                "(Fiat Uno Turbo), auto basse, auto larghe, rumorose... <u class='highline'>Cosa aspetti: manchi solo tu!!</u>",
         icon: "info",
         toast: false,
         position: "bottom",
@@ -70,8 +74,8 @@ $(document).ready(function() {
             const confirmButton = Swal.getConfirmButton();
             confirmButton.blur();  // Rimuove il focus dal bottone di conferma
           },
-        confirmButtonText: "Vado a prenotare",
-        denyButtonText: "Voglio solo guardare il sito",
+        confirmButtonText: "Vado a prenotare (sei un figo😎)",
+        denyButtonText: "Mmmh fammi prima guardare il sito",
         customClass: {
             confirmButton: "btn page-scroll btn-green",
             denyButton: "btn btn-red page-scroll"
