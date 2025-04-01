@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     function updateImage() {
         if ($(window).width() <= 767) {
             /*$('.personal-responsive-img').attr('src', 'img/222logo-white.png');
@@ -20,16 +20,16 @@ $(document).ready(function() {
     }
 
     /* Carousel */
-
+    // Se aggiungi immagini qui, ricordati di modificare il valore nel carosello, in 2 punti
     let slider = $(".slide-track");
     let imgPath = "img/loghi_sponsor_new/";
     let ext = ".jpg";
-    let imgList = ["ae", "aeffe", "agraria", "alimenta", "barPalazzetto", "barRoma", "beilis", 
-        "bertea", "bonansone", "bottano", "busso", "donatella_gallo", "duvinaFormaggi", "effepiu", "evoedile", 
-        "fulvioCaseificio", "gallo", "ilPruche", "kromo", "laLea", "muli", "neroDelRe", "officina626", 
-        "officinaPiccato", "panetteriaRolle", "ricotto", "roda", "rovetto", "saiel", "salfer", "scalerandi", 
+    let imgList = ["ae", "aeffe", "agraria", "alimenta", "barPalazzetto", "barRoma", "beilis",
+        "bertea", "bonansone", "bottano", "busso", "donatella_gallo", "duvinaFormaggi", "effepiu", "evoedile",
+        "fulvioCaseificio", "gallo", "ilPruche", "kromo", "laLea", "muli", "neroDelRe", "officina626",
+        "officinaPiccato", "olivero", "panetteriaRolle", "ricotto", "roda", "rovetto", "saiel", "salfer", "scalerandi",
         "vedCostruzioniEdili", "vera", "villafrancaFiocchi"];
-    
+
     for (let i = 0; i < imgList.length; i++) {
         let elem = `<div class="slide"><img height="200px" width="250px" src="${imgPath}${imgList[i]}${ext}" alt="${imgList[i]}" /></div>`;
         $(slider).append(elem);
@@ -38,22 +38,22 @@ $(document).ready(function() {
         let elem = `<div class="slide"><img height="200px" width="250px" src="${imgPath}${imgList[i]}${ext}" alt="${imgList[i]}" /></div>`;
         $(slider).append(elem);
     }
-  
-      const swiper = new Swiper('.swiper', {
+
+    const swiper = new Swiper('.swiper', {
         loop: false,
         effect: 'cards',
         perSlideOffset: 20,
         perSlideRotate: 2,
         rotate: true,
         slideShadows: true
-      });
+    });
 
     updateImage(); // Chiamata iniziale
     $(window).resize(updateImage); // Chiamata al ridimensionamento
     //console.log('script.js loaded');
 
-    /* Toast con informazioni importanti */
-
+    /* Toast, non più necessario per ora */
+    /* 
     Swal.fire({
         title: "<h3>Hey stiamo per cominciare...🏎️💨</h3>",
         //text: "Accetti l'uso dei cookie per una migliore esperienza?",
@@ -93,7 +93,7 @@ $(document).ready(function() {
           console.log("Cookie rifiutati");
           //localStorage.setItem("cookieAccepted", "false");
         }
-      });
+      });*/
 
     /*=============================================
 
